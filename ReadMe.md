@@ -1,3 +1,3 @@
 # Portfolio - V1
 
-Built with HTML, CSS and Js
+Built with HTML, CSS and Vanilla Js
