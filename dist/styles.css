@@ -155,12 +155,6 @@ h3 {
 .nav {
 	width: 100%;
 	padding: 0 1rem;
-	box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-		6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-		12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-		22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-		41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-		100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 .nav .container {
@@ -488,8 +482,9 @@ h3 {
 }
 
 .other-footer {
+	background: var(--secondary-clr);
 	margin-top: var(--section-mt);
-	border-top: 2px solid var(--secondary-clr);
+	margin-bottom: 1rem;
 	font-size: 1.2rem;
 	padding: 2rem 0;
 }
@@ -504,7 +499,7 @@ h3 {
 .other-footer div {
 	display: flex;
 	align-items: center;
-	gap: 4rem;
+	gap: 5rem;
 }
 
 .other-footer ul {
@@ -523,11 +518,6 @@ h3 {
 }
 
 .top {
-	width: 35px;
-	height: 35px;
-	border: 1px solid var(--main-clr);
-	border-radius: 50%;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -667,6 +657,7 @@ h3 {
 
 	.other-footer .container {
 		justify-content: center;
+		gap: 2rem;
 	}
 
 	.mail-link {
