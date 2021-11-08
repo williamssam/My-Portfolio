@@ -475,10 +475,12 @@ h3 {
 	width: max-content;
 	transition: var(--transition-clr);
 	position: relative;
+	text-decoration: underline;
 }
 
 .mail-link:hover {
 	color: var(--accent-clr);
+	text-decoration: none;
 }
 
 .other-footer {
