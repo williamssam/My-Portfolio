@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Williams Samuel is a Frontend Web Developer based in Lagos State, Nigeria, who is passionate about web technology."
+		/>
+		<meta name="keywords" content="Frontend Web Developer, Open Source" />
+		<link rel="icon" href="./assets/favicon-32x32.png" />
+		<link rel="apple-touch-icon" href="./assets/favicon-32x32.png" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="./script.js" defer></script>
+		<title>Williams Samuel</title>
+	</head>
+	<body id="top">
+		<header>
+			<nav class="nav">
+				<div class="container">
+					<img
+						src="./assets/samuel.jpg"
+						alt="williams animated"
+						class="logo"
+					/>
+
+					<ul class="nav-list">
+						<!-- <li><a href="#">Home</a></li> -->
+						<li>
+							<a href="#about" class="nav-links hover-effect"
+								>About me</a
+							>
+						</li>
+						<li>
+							<a href="#projects" class="nav-links hover-effect">
+								My projects</a
+							>
+						</li>
+						<li>
+							<a href="#" class="nav-links hover-effect">Toolkit</a>
+						</li>
+						<li>
+							<a href="#contact" class="nav-links hover-effect"
+								>Contact me</a
+							>
+						</li>
+
+						<!-- <li><a href="#" class="nav-links">Hire me</a></li> -->
+					</ul>
+
+					<ul class="social-nav">
+						<!-- twitter -->
+						<li>
+							<a
+								href="https://twitter.com/williams_codes"
+								rel="noreferrer"
+								target="_blank"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									style="fill: currentColor"
+								>
+									<path
+										d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<!-- linkedin -->
+						<li>
+							<a
+								href="https://linkedin.com/in/williams-samuel-69733a216/"
+								rel="noreferrer"
+								target="_blank"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									style="fill: currentColor"
+								>
+									<circle cx="4.983" cy="5.009" r="2.188"></circle>
+									<path
+										d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<!-- github -->
+						<li>
+							<a
+								href="https://github.com/williamssam"
+								rel="noreferrer"
+								target="_blank"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									style="fill: currentColor"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+									></path>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+					<div class="hamburger">
+						<div class="line-menu half start"></div>
+						<div class="line-menu"></div>
+						<div class="line-menu half end"></div>
+					</div>
+				</div>
+			</nav>
+
+			<section class="hero">
+				<div class="container">
+					<article class="hero-intro">
+						<div>
+							<p class="subtitle">hi 🖐 there, i'm</p>
+							<h2 class="name">Williams Samuel</h2>
+						</div>
+
+						<div>
+							<p class="intro">
+								A Lagos, Nigeria based Frontend Developer who
+								specializes in building exceptional digital experience.
+							</p>
+
+							<a href="mailto:samwill300@gmail.com" class="btn hire-btn"
+								>Hire me</a
+							>
+						</div>
+					</article>
+
+					<!-- <img src="./assets/williams.jpg" alt="williams samuel" /> -->
+					<img src="./assets/coding-ground.png" alt="" />
+				</div>
+			</section>
+		</header>
+
+		<main>
+			<!-- about me -->
+			<section class="about-me" id="about">
+				<div class="container">
+					<img src="./assets/williams.jpg" alt="" class="willy" />
+					<article>
+						<p class="subtitle">Who is Williams Samuel</p>
+						<h2 class="title">A Bit About Me</h2>
+						<div class="about">
+							<p>I'm a self taught Frontend Web Developer.</p>
+							<p>
+								As I've grown as a developer, i've contributed to
+								projects and worked with other developers in brining
+								ideas to life, I've had the opportunity to create
+								working applications that are written in code that are
+								maintainable and easy to understand.
+							</p>
+							<p>
+								Through my studies, I've gained a solid understanding of
+								web development concepts, and have dedicated a lot of
+								time to apply these concepts to real-world scenarios and
+								applications.
+							</p>
+
+							<p>
+								Here are a few technologies I’ve been working with
+								recently:
+							</p>
+
+							<ul>
+								<li>HTML & CSS</li>
+								<li>Tailwind CSS</li>
+								<li>Sass</li>
+								<li>Javascript (ES6+)</li>
+								<li>React Js</li>
+								<li>Styled Components</li>
+								<li>Next Js</li>
+								<li>Git</li>
+								<li><em>Node Js</em></li>
+							</ul>
+
+							<p>
+								When I'm not building the next big thing on the web, you
+								can find me supporting watching football matches, and
+								exploring other technologies.
+							</p>
+						</div>
+					</article>
+
+					<!-- <a href="#" class="download-cv">Download CV</a> -->
+				</div>
+			</section>
+
+			<!-- projects -->
+			<section class="projects-section" id="projects">
+				<div class="container">
+					<article>
+						<p class="subtitle">My projects</p>
+						<h2 class="title">Some Things I Have Built</h2>
+						<p class="info">
+							I like to stay busy and always have a project in the works.
+							Take a look at some of the applications i've have built
+						</p>
+					</article>
+
+					<!-- projects -->
+					<section class="projects">
+						<!-- github profile -->
+						<article class="project">
+							<a
+								href="https://gh-profiles.netlify.app/"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img"
+							>
+								<img
+									src="./assets/gh-profile.jpg"
+									alt="github profile website screenshot"
+									title="github profile"
+								/>
+							</a>
+
+							<div>
+								<h3>01</h3>
+								<h2>Github Profile</h2>
+								<p>
+									A better look at your github profile which includes
+									data visualization of your top languages, starred
+									repos and sort your top repos according to the number
+									of forks, stars and size
+								</p>
+
+								<!-- tech stack -->
+								<ul class="tech-stack">
+									<li>React</li>
+									<li>Styled Component</li>
+									<li>Github Polyghot</li>
+								</ul>
+
+								<!-- links	 -->
+								<ul class="project-links">
+									<li>
+										<a
+											href="https://gh-profiles.netlify.app/"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="18"
+												height="18"
+												viewBox="0 0 24 24"
+												style="fill: currentColor"
+											>
+												<path
+													d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"
+												></path>
+												<path
+													d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"
+												></path>
+											</svg>
+											<span>Link</span>
+										</a>
+									</li>
+									<!-- <li>
+										<a href="#">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="18"
+												height="18"
+												viewBox="0 0 24 24"
+												style="fill: currentColor"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+												></path>
+											</svg>
+											<span>Github</span>
+										</a>
+									</li> -->
+								</ul>
+							</div>
+						</article>
+
+						<!-- covid map dashboard -->
+						<article class="project">
+							<a
+								href="https://covid-map-dashboard.netlify.app/"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img"
+							>
+								<img
+									src="./assets/covid-map.jpg"
+									alt="covid map dashboard website screenshot"
+									title="covid map dashboard"
+								/>
+							</a>
+
+							<div>
+								<h3>02</h3>
+								<h2>Covid Map Dashboard</h2>
+								<p>
+									A look at the current Global Coronavirus (Covid-19)
+									Cases including confirmed cases, recovered cases,
+									total deaths, active cases, critical cases etc with
+									map to indicate individual coountry confirmed cases,
+									recovered cases and total deaths. It also incorporate
+									graphs to indicate the global cases.
+								</p>
+
+								<!-- tech stack -->
+								<ul class="tech-stack">
+									<li>React</li>
+									<li>CSS Modules</li>
+									<li>Axios</li>
+								</ul>
+
+								<!-- links	 -->
+								<ul class="project-links">
+									<li>
+										<a
+											href="https://covid-map-dashboard.netlify.app/"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="18"
+												height="18"
+												viewBox="0 0 24 24"
+												style="fill: currentColor"
+											>
+												<path
+													d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"
+												></path>
+												<path
+													d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"
+												></path>
+											</svg>
+											<span>Link</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- ip address tracker -->
+						<article class="project">
+							<a
+								href="https://williamssam.github.io/ip-address-tracker/"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img"
+							>
+								<img
+									src="./assets/ipaddress-tracker.jpg"
+									alt="ip address tracker website screenshot"
+									title="ip address tracker"
+								/>
+							</a>
+
+							<div>
+								<h3>03</h3>
+								<h2>Ip Address Tracker</h2>
+								<p>
+									Track any ip address in the world and view their
+									current location/location where the Ip was
+									registered, timezone, and isp. It also indicates the
+									current location of the Ip Address on a map.
+								</p>
+
+								<!-- tech stack -->
+								<ul class="tech-stack">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>Javascript</li>
+								</ul>
+
+								<!-- links	 -->
+								<ul class="project-links">
+									<li>
+										<a
+											href="https://williamssam.github.io/ip-address-tracker/"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="18"
+												height="18"
+												viewBox="0 0 24 24"
+												style="fill: currentColor"
+											>
+												<path
+													d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"
+												></path>
+												<path
+													d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"
+												></path>
+											</svg>
+											<span>Link</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- wordsearch -->
+						<article class="project">
+							<a
+								href="https://williamssam.github.io/wordsearch/"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img"
+							>
+								<img
+									src="./assets/wordsearch.jpg"
+									alt="word search website screenshot"
+									title="wordsearch"
+								/>
+							</a>
+
+							<div>
+								<h3>04</h3>
+								<h2>WordSearch</h2>
+								<p>
+									An application to search for the meaning, synonyms of
+									english words with an added advantage of listening to
+									the pronounciation of the word.
+								</p>
+
+								<!-- tech stack -->
+								<ul class="tech-stack">
+									<li>React Js</li>
+								</ul>
+
+								<!-- links	 -->
+								<ul class="project-links">
+									<li>
+										<a
+											href="https://williamssam.github.io/wordsearch/"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="18"
+												height="18"
+												viewBox="0 0 24 24"
+												style="fill: currentColor"
+											>
+												<path
+													d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"
+												></path>
+												<path
+													d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"
+												></path>
+											</svg>
+											<span>Link</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+
+						<!-- joke web bot -->
+						<article class="project">
+							<a
+								href="https://williamssam.github.io/jokes-web-bot/"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img"
+							>
+								<img
+									src="./assets/joke-bot.jpg"
+									alt="ip address tracker website screenshot"
+									title="joke web bot"
+								/>
+							</a>
+
+							<div>
+								<h3>05</h3>
+								<h2>Joke Web Bot</h2>
+								<p>
+									Are you having a boring day? This is a web bot that
+									searches for jokes on the internet by clicking on
+									'get a joke button' and reads out the joke for you
+									using the <em>'speechsynthesis api'</em> and also you
+									can change the accent/speaker to your choice if the
+									original accent sounds not jovial 😁
+								</p>
+
+								<!-- tech stack -->
+								<ul class="tech-stack">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>Javascript</li>
+								</ul>
+
+								<!-- links	 -->
+								<ul class="project-links">
+									<li>
+										<a
+											href="https://williamssam.github.io/jokes-web-bot/"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="18"
+												height="18"
+												viewBox="0 0 24 24"
+												style="fill: currentColor"
+											>
+												<path
+													d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"
+												></path>
+												<path
+													d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"
+												></path>
+											</svg>
+											<span>Link</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+					</section>
+
+					<!-- more project -->
+					<section class="other-noteworthy-project">
+						<h3>Other Noteworthy Projects</h3>
+
+						<ul class="other-projects">
+							<li>
+								<a
+									href="https://williamssam.github.io/weather-app/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img src="./assets/weather-app.png" alt="" />
+									<div>
+										<h4>Weather App</h4>
+										<p>
+											Displays the current weather condition of the
+											user current location. If curious, you can also
+											search for other location weather info.
+										</p>
+
+										<ul>
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>Javascript</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a
+									href="https://williamssam.github.io/password-generator"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img src="./assets/password-generator.png" alt="" />
+									<div>
+										<h4>Password Generator</h4>
+										<p>
+											Generate random password containing only
+											letters, symbols, numbers, either two of the
+											three or all of them. No need for 'Ctrl + C'
+											😄, just click the
+											<em>copy</em> button 😎
+										</p>
+
+										<ul>
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>Javascript</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a
+									href="https://williamssam.github.io/quiz-app/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img src="./assets/quiz-app.png" alt="" />
+									<div>
+										<h4>Quiz App</h4>
+										<p>
+											Test your knowledge with different questions
+											from different fields.
+										</p>
+
+										<ul>
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>Javascript</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a
+									href="https://williamssam.github.io/color-palette-generator/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img src="./assets/palette-generator.png" alt="" />
+									<div>
+										<h4>Color Palette Generator</h4>
+										<p>
+											Randomly generate beautif color palette for
+											your project. and you could just press
+											<em>"J"</em> on your keyboard to generate
+										</p>
+
+										<ul>
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>Javascript</li>
+										</ul>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer" id="contact">
+			<section>
+				<div class="container">
+					<p class="subtitle">Have a project? or just looking to hire?</p>
+					<h2 class="title">Let's Work Together</h2>
+					<p class="info">
+						Feel free to reach out if you're looking for a developer, have
+						a question or just want to connect.
+					</p>
+
+					<a
+						href="mailto:samwill300@gmail.com"
+						class="mail-link hover-effect"
+						>Get in touch</a
+					>
+				</div>
+			</section>
+
+			<section class="other-footer">
+				<div class="container">
+					<p>
+						&copy; <span id="date"></span> Williams Samuel -
+						<em>theCodeMagician</em>
+					</p>
+
+					<div>
+						<ul>
+							<li>
+								<a
+									href="https://github.com/williamssam"
+									rel="noreferrer"
+									target="_blank"
+									>github</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://twitter.com/williams_codes"
+									rel="noreferrer"
+									target="_blank"
+									>twitter</a
+								>
+							</li>
+						</ul>
+
+						<div class="top">
+							<a href="#top">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									style="fill: currentColor"
+								>
+									<path
+										d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"
+									></path>
+									<path
+										d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"
+									></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>
