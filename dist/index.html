@@ -12,6 +12,8 @@
 		<link rel="icon" href="./assets/favicon-32x32.png" />
 		<link rel="apple-touch-icon" href="./assets/favicon-32x32.png" />
 		<link rel="stylesheet" href="styles.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="./script.js" defer></script>
 		<title>Williams Samuel</title>
 	</head>
@@ -24,6 +26,7 @@
 						alt="williams animated"
 						class="logo"
 					/>
+
 					<ul class="nav-list">
 						<li>
 							<a href="#about" class="nav-links hover-effect"
@@ -35,15 +38,16 @@
 								>My projects</a
 							>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="#" class="nav-links hover-effect">Toolkit</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="#contact" class="nav-links hover-effect"
 								>Contact me</a
 							>
 						</li>
 					</ul>
+
 					<ul class="social-nav">
 						<li>
 							<a
@@ -107,9 +111,10 @@
 					</div>
 				</div>
 			</nav>
+
 			<section class="hero">
 				<div class="container">
-					<article class="hero-intro">
+					<article>
 						<div>
 							<p class="subtitle">hi 🖐 there, i'm</p>
 							<h2 class="name">Williams Samuel</h2>
@@ -124,15 +129,19 @@
 							>
 						</div>
 					</article>
-					<img src="./assets/coding-ground.png" alt="" />
+					<img
+						src="./assets/coding-ground.png"
+						alt=""
+						class="animate__animated animate__fadeIn animate__delay-1s"
+					/>
 				</div>
 			</section>
 		</header>
 
 		<main>
-			<section class="about-me" id="about">
-				<div class="container">
-					<img src="./assets/williams.jpg" alt="" class="willy" />
+			<section class="about-me">
+				<div class="container" data-aos="fade-up">
+					<img src="./assets/williams.jpg" alt="Williams Samuel" />
 					<article>
 						<p class="subtitle">Who is Williams Samuel</p>
 						<h2 class="title">A Bit About Me</h2>
@@ -164,7 +173,6 @@
 								<li>Styled Components</li>
 								<li>Next Js</li>
 								<li>Git</li>
-								<li><em>Node Js</em></li>
 							</ul>
 							<p>
 								When I'm not building the next big thing on the web, you
@@ -177,7 +185,7 @@
 			</section>
 			<section class="projects-section" id="projects">
 				<div class="container">
-					<article>
+					<article data-aos="fade-up">
 						<p class="subtitle">My projects</p>
 						<h2 class="title">Some Things I Have Built</h2>
 						<p class="info">
@@ -186,7 +194,7 @@
 						</p>
 					</article>
 					<section class="projects">
-						<article class="project">
+						<article class="project" data-aos="fade-right">
 							<a
 								href="https://gh-profiles.netlify.app/"
 								target="_blank"
@@ -231,13 +239,13 @@
 												<path
 													d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"
 												></path></svg
-											><span>Link</span></a
+											><span>Live</span></a
 										>
 									</li>
 								</ul>
 							</div>
 						</article>
-						<article class="project">
+						<article class="project" data-aos="fade-left">
 							<a
 								href="https://covid-map-dashboard.netlify.app/"
 								target="_blank"
@@ -263,6 +271,7 @@
 									<li>React</li>
 									<li>CSS Modules</li>
 									<li>Axios</li>
+									<li>Context Api (useContext)</li>
 								</ul>
 								<ul class="project-links">
 									<li>
@@ -284,13 +293,13 @@
 												<path
 													d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"
 												></path></svg
-											><span>Link</span></a
+											><span>Live</span></a
 										>
 									</li>
 								</ul>
 							</div>
 						</article>
-						<article class="project">
+						<article class="project" data-aos="fade-right">
 							<a
 								href="https://williamssam.github.io/ip-address-tracker/"
 								target="_blank"
@@ -335,13 +344,13 @@
 												<path
 													d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"
 												></path></svg
-											><span>Link</span></a
+											><span>Live</span></a
 										>
 									</li>
 								</ul>
 							</div>
 						</article>
-						<article class="project">
+						<article class="project" data-aos="fade-left">
 							<a
 								href="https://williamssam.github.io/wordsearch/"
 								target="_blank"
@@ -383,13 +392,13 @@
 												<path
 													d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"
 												></path></svg
-											><span>Link</span></a
+											><span>Live</span></a
 										>
 									</li>
 								</ul>
 							</div>
 						</article>
-						<article class="project">
+						<article class="project" data-aos="fade-right">
 							<a
 								href="https://williamssam.github.io/jokes-web-bot/"
 								target="_blank"
@@ -436,14 +445,14 @@
 												<path
 													d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"
 												></path></svg
-											><span>Link</span></a
+											><span>Live</span></a
 										>
 									</li>
 								</ul>
 							</div>
 						</article>
 					</section>
-					<section class="other-noteworthy-project">
+					<section class="other-noteworthy-project" data-aos="fade-up">
 						<h3>Other Noteworthy Projects</h3>
 						<ul class="other-projects">
 							<li>
@@ -472,10 +481,7 @@
 									href="https://williamssam.github.io/password-generator"
 									target="_blank"
 									rel="nooperner noreferrer"
-									><img
-										src="./assets/password-generator.png"
-										alt=""
-									/>
+									><img src="./assets/password-generator.png" alt="" />
 									<div>
 										<h4>Password Generator</h4>
 										<p>
@@ -537,10 +543,7 @@
 					</section>
 				</div>
 			</section>
-		</main>
-
-		<footer class="footer" id="contact">
-			<section>
+			<section class="contact" data-aos="fade-up">
 				<div class="container">
 					<p class="subtitle">Have a project? or just looking to hire?</p>
 					<h2 class="title">Let's Work Together</h2>
@@ -555,50 +558,53 @@
 					>
 				</div>
 			</section>
-			<section class="other-footer">
-				<div class="container">
-					<p>
-						&copy; <span id="date"></span>Williams Samuel -
-						<em>theCodeMagician</em>
-					</p>
-					<div>
-						<ul>
-							<li>
-								<a
-									href="https://github.com/williamssam"
-									rel="noreferrer"
-									target="_blank"
-									>github</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://twitter.com/williams_codes"
-									rel="noreferrer"
-									target="_blank"
-									>twitter</a
-								>
-							</li>
-						</ul>
-						<a href="#top" class="top"
-							><span>scroll to top</span
-							><svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								style="fill: currentColor"
+		</main>
+
+		<footer class="footer" id="contact">
+			<div class="container">
+				<p>
+					&copy; <span id="date">2021</span> Williams Samuel -
+					<em>theCodeMagician</em>
+				</p>
+				<div>
+					<ul>
+						<li>
+							<a
+								href="https://github.com/williamssam"
+								rel="noreferrer"
+								target="_blank"
+								class="hover-effect"
+								>github</a
 							>
-								<path
-									d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"
-								></path>
-								<path
-									d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"
-								></path></svg
-						></a>
-					</div>
+						</li>
+						<li>
+							<a
+								href="https://twitter.com/williams_codes"
+								rel="noreferrer"
+								target="_blank"
+								class="hover-effect"
+								>twitter</a
+							>
+						</li>
+					</ul>
+					<a href="#top" class="top"
+						><span>scroll to top</span
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							style="fill: currentColor"
+						>
+							<path
+								d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"
+							></path>
+							<path
+								d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"
+							></path></svg
+					></a>
 				</div>
-			</section>
+			</div>
 		</footer>
 	</body>
 </html>

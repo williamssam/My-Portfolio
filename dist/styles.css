@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@500;800;900&display=swap');
 
 :root {
+	--animate-delay: 0.5s;
 	--primary-clr: hsl(0, 0%, 0%);
 	--secondary-clr: hsl(0, 0%, 11%);
 	--other-clr: hsl(0, 0%, 61%);
@@ -17,6 +18,10 @@
 	scrollbar-color: var(--other-clr) #b9b9b9;
 	scrollbar-width: thin;
 	scrollbar-gutter: stable;
+}
+
+.willy {
+	visibility: hidden;
 }
 
 /* style webkit browsers (chrome, edge) scrollbar */
@@ -284,10 +289,16 @@ h3 {
 }
 
 .about-me img {
+	transform: scale(0.99);
 	box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.006),
 		0px 0px 5.3px rgba(0, 0, 0, 0.008), 0px 0px 10px rgba(0, 0, 0, 0.01),
 		0px 0px 17.9px rgba(0, 0, 0, 0.012), 0px 0px 33.4px rgba(0, 0, 0, 0.014),
 		0px 0px 80px rgba(0, 0, 0, 0.02);
+	transition: all 0.3s ease-in-out;
+}
+
+.about-me img:hover {
+	transform: scale(1);
 }
 
 .about {
@@ -337,11 +348,24 @@ h3 {
 
 .project-img {
 	transition: opactiy 300ms ease-in-out;
+	position: relative;
+	display: inline-block;
+	/* visibility: hidden; */
 }
 
-.project-img:hover {
+/* .project-img::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: var(--primary-clr);
+} */
+
+/* .project-img:hover {
 	opacity: 0.8;
-}
+} */
 
 .project:nth-child(even) a {
 	order: 2;
@@ -378,7 +402,7 @@ h3 {
 .project-links a {
 	display: flex;
 	align-items: center;
-	gap: 0.75rem;
+	gap: 0.5rem;
 	position: relative;
 	transition: var(--transition-clr);
 }
@@ -458,15 +482,11 @@ h3 {
 }
 
 /*******************
-		FOOTER
+		CONTACT
 *************************/
-.footer {
+.contact {
 	margin-top: var(--section-mt);
 	padding: 0 1rem;
-}
-
-.footer em {
-	color: var(--other-clr);
 }
 
 .mail-link {
@@ -475,7 +495,8 @@ h3 {
 	width: max-content;
 	transition: var(--transition-clr);
 	position: relative;
-	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .mail-link:hover {
@@ -483,39 +504,48 @@ h3 {
 	text-decoration: none;
 }
 
-.other-footer {
-	background: var(--secondary-clr);
+/*******************
+		FOOTER
+*************************/
+.footer {
 	margin-top: var(--section-mt);
-	margin-bottom: 1rem;
-	font-size: 1.2rem;
-	padding: 2rem 0;
+	background: var(--secondary-clr);
+	padding: 0 1rem;
 }
 
-.other-footer .container {
+.footer .container {
+	margin-top: var(--section-mt);
+	font-size: 1.2rem;
+	padding: 2rem 1rem;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.other-footer div {
+.footer em {
+	color: var(--other-clr);
+}
+
+.footer div {
 	display: flex;
 	align-items: center;
 	gap: 5rem;
 }
 
-.other-footer ul {
+.footer ul {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
 }
 
-.other-footer a {
+.footer a {
 	letter-spacing: 1px;
 	transition: var(--transition-clr);
+	position: relative;
 }
 
-.other-footer a:hover {
+.footer a:hover {
 	color: var(--accent-clr);
 }
 
@@ -628,7 +658,6 @@ h3 {
 	.open .line-menu.end {
 		transform: rotate(-90deg) translateX(-3px);
 	}
-	/* hamburger ends */
 
 	.hero .container {
 		height: 60vh;
@@ -657,7 +686,7 @@ h3 {
 		justify-content: center;
 	}
 
-	.other-footer .container {
+	.footer .container {
 		justify-content: center;
 		gap: 2rem;
 	}

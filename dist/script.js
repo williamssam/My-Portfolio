@@ -20,3 +20,5 @@ const openMobileMenu = () => {
 }
 
 hamburger.addEventListener('click', openMobileMenu)
+
+AOS.init()
