@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@500;800;900&display=swap');
 
 :root {
-	--animate-delay: 0.5s;
 	--primary-clr: hsl(0, 0%, 0%);
 	--secondary-clr: hsl(0, 0%, 11%);
 	--other-clr: hsl(0, 0%, 61%);
@@ -18,10 +17,6 @@
 	scrollbar-color: var(--other-clr) #b9b9b9;
 	scrollbar-width: thin;
 	scrollbar-gutter: stable;
-}
-
-.willy {
-	visibility: hidden;
 }
 
 /* style webkit browsers (chrome, edge) scrollbar */
@@ -99,6 +94,79 @@ h3 {
 	line-height: 1.2;
 	font-weight: 900;
 }
+
+/***********************
+	ANIMATION UTILITIES
+*********************/
+.bounce-in-left {
+	animation: bounce-in-left 1.1s both 0.3s;
+}
+
+.slide-in-top {
+	animation: slide-in-top 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.fade-in {
+	animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+}
+
+@keyframes bounce-in-left {
+	0% {
+		transform: translateX(-600px);
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+	38% {
+		transform: translateX(0);
+		animation-timing-function: ease-out;
+		opacity: 1;
+	}
+	55% {
+		transform: translateX(-68px);
+		animation-timing-function: ease-in;
+	}
+	72% {
+		transform: translateX(0);
+		animation-timing-function: ease-out;
+	}
+	81% {
+		transform: translateX(-28px);
+		animation-timing-function: ease-in;
+	}
+	90% {
+		transform: translateX(0);
+		animation-timing-function: ease-out;
+	}
+	95% {
+		transform: translateX(-8px);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: translateX(0);
+		animation-timing-function: ease-out;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes slide-in-top {
+	0% {
+		transform: translateY(-1000px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
 /*******************
 		UTILITIES
 *************************/
