@@ -17,6 +17,7 @@
 	scrollbar-color: var(--other-clr) #b9b9b9;
 	scrollbar-width: thin;
 	scrollbar-gutter: stable;
+	overflow-x: hidden;
 }
 
 /* style webkit browsers (chrome, edge) scrollbar */
