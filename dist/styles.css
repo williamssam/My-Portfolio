@@ -231,14 +231,14 @@ h3 {
 	height: 1.5px;
 	background: var(--accent-clr);
 
-	transform: scale(0);
+	transform: scaleX(0);
 	transform-origin: left;
 	transition: all 300ms ease-in-out;
 }
 
 .hover-effect:hover::after {
 	transform-origin: right;
-	transform: scale(1);
+	transform: scaleX(1);
 }
 
 /*******************
