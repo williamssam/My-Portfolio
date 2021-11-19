@@ -1,0 +1,77 @@
+[
+	{
+		"url": "https://code.visualstudio.com/",
+		"name": "VS Code",
+		"desc": "for code editing and development"
+	},
+	{
+		"url": "https://www.frontendmentor.io/",
+		"name": "Frontend Mentor",
+		"desc": "for coding practice"
+	},
+	{
+		"url": "https://codewell.cc/",
+		"name": "Code Well",
+		"desc": "for coding practice"
+	},
+	{
+		"url": "https://boxicons.com/",
+		"name": "Box Icons",
+		"desc": "for svg icons when using just HTML & CSS"
+	},
+	{
+		"url": "https://react-icons.github.io/react-icons/",
+		"name": "React Icons",
+		"desc": "for svg icons when using React & React Native"
+	},
+	{
+		"url": "https://www.uidesigndaily.com/",
+		"name": "UI Design Daily",
+		"desc": "for free ui and design inspiration"
+	},
+	{
+		"url": "http://dribbble.com/",
+		"name": "Dribble",
+		"desc": "for design inspiration"
+	},
+	{
+		"url": "https://usehooks.com/",
+		"name": "useHooks",
+		"desc": "for everyday react hook solution"
+	},
+	{
+		"url": "https://github.com/public-apis/public-apis",
+		"name": "Public APIs",
+		"desc": "github repo for restful apis for projects"
+	},
+	{
+		"url": "https://github.com/APIs-guru/graphql-apis",
+		"name": "Public GraphQL APIs",
+		"desc": "github repo for graphql apis"
+	},
+	{
+		"url": "https://stackblitz.com/",
+		"name": "Stackblitz",
+		"desc": "for fast development on the web"
+	},
+	{
+		"url": "https://vitejs.dev/",
+		"name": "Vite",
+		"desc": "for faster react loading and development"
+	},
+	{
+		"url": "https://swr.vercel.app/",
+		"name": "useSWR Hook",
+		"desc": "for data fetching and other intersting stuffs"
+	},
+	{
+		"url": "https://www.netlify.com/",
+		"name": "Netlify",
+		"desc": "for hosting webpages"
+	},
+	{
+		"url": "https://gitexplorer.com/",
+		"name": "Git Explorer",
+		"desc": "to find solutons to git problems"
+	}
+]

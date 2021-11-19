@@ -18,14 +18,16 @@
 		<title>Williams Samuel</title>
 	</head>
 	<body id="top">
-		<header>
+		<header class="main-header">
 			<nav class="nav slide-in-top">
 				<div class="container">
-					<img
-						src="./assets/samuel.jpg"
-						alt="williams animated"
-						class="logo"
-					/>
+					<a href="#">
+						<img
+							src="./assets/samuel.jpg"
+							alt="williams animated"
+							class="logo"
+						/>
+					</a>
 
 					<ul class="nav-list">
 						<li>
@@ -38,9 +40,13 @@
 								>My projects</a
 							>
 						</li>
-						<!-- <li>
-							<a href="#" class="nav-links hover-effect">Toolkit</a>
-						</li> -->
+						<li>
+							<a
+								href="./resources/resources.html"
+								class="nav-links hover-effect"
+								>Resources</a
+							>
+						</li>
 						<li>
 							<a href="#contact" class="nav-links hover-effect"
 								>Contact me</a
@@ -135,7 +141,7 @@
 		</header>
 
 		<main>
-			<section class="about-me">
+			<section class="about-me" id="about">
 				<div class="container" data-aos="fade-up">
 					<img src="./assets/williams.jpg" alt="Williams Samuel" />
 					<article>
@@ -145,7 +151,7 @@
 							<p>I'm a self taught Frontend Web Developer.</p>
 							<p>
 								As I've grown as a developer, i've contributed to
-								projects and worked with other developers in brining
+								projects and worked with other developers in bringing
 								ideas to life, I've had the opportunity to create
 								working applications that are written in code that are
 								maintainable and easy to understand.
@@ -171,9 +177,10 @@
 								<li>Git</li>
 							</ul>
 							<p>
-								When I'm not building the next big thing on the web, you
-								can find me supporting watching football matches, and
-								exploring other technologies.
+								When I'm not trying building the next big thing on the
+								web 😉, you can find me supporting Fc Barcelona,
+								watching other football matches, and exploring other
+								technologies.
 							</p>
 						</div>
 					</article>
@@ -190,7 +197,7 @@
 						</p>
 					</article>
 					<section class="projects">
-						<article class="project" data-aos="fade-right">
+						<article class="project">
 							<a
 								href="https://gh-profiles.netlify.app/"
 								target="_blank"
@@ -241,7 +248,7 @@
 								</ul>
 							</div>
 						</article>
-						<article class="project" data-aos="fade-left">
+						<article class="project">
 							<a
 								href="https://covid-map-dashboard.netlify.app/"
 								target="_blank"
@@ -295,7 +302,7 @@
 								</ul>
 							</div>
 						</article>
-						<article class="project" data-aos="fade-right">
+						<article class="project">
 							<a
 								href="https://williamssam.github.io/ip-address-tracker/"
 								target="_blank"
@@ -346,7 +353,7 @@
 								</ul>
 							</div>
 						</article>
-						<article class="project" data-aos="fade-left">
+						<article class="project">
 							<a
 								href="https://williamssam.github.io/wordsearch/"
 								target="_blank"
@@ -394,7 +401,7 @@
 								</ul>
 							</div>
 						</article>
-						<article class="project" data-aos="fade-right">
+						<article class="project">
 							<a
 								href="https://williamssam.github.io/jokes-web-bot/"
 								target="_blank"
@@ -420,6 +427,7 @@
 									<li>HTML</li>
 									<li>CSS</li>
 									<li>Javascript</li>
+									<li>speechSynthesis API</li>
 								</ul>
 								<ul class="project-links">
 									<li>
@@ -583,9 +591,9 @@
 							>
 						</li>
 					</ul>
-					<a href="#top" class="top"
-						><span>scroll to top</span
-						><svg
+					<a href="#top" class="top">
+						<p class="scroll">scroll <span>to top</span></p>
+						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="24"
 							height="24"

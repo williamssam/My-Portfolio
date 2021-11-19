@@ -11,6 +11,7 @@ setCurrentDate()
 const hamburger = document.querySelector('.hamburger')
 const navList = document.querySelector('.nav-list')
 const socials = document.querySelector('.social-nav')
+const navLinks = document.querySelectorAll('.nav-links')
 
 const openMobileMenu = () => {
 	hamburger.classList.toggle('open')
@@ -19,6 +20,8 @@ const openMobileMenu = () => {
 	document.body.classList.toggle('open')
 }
 
+navLinks.forEach((link) => link.addEventListener('click', openMobileMenu))
 hamburger.addEventListener('click', openMobileMenu)
 
+// initialize aos (library for scroll animation)
 AOS.init()

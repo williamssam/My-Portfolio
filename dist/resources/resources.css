@@ -1,0 +1,89 @@
+/*******************
+		TOOLKIT
+*************************/
+.toolkit-main {
+	position: relative;
+}
+
+.toolkit-header {
+	position: relative;
+	margin-top: 5rem;
+}
+
+.toolkit-header::after {
+	position: absolute;
+	content: '';
+	width: 10rem;
+	height: 2px;
+	bottom: -4rem;
+	left: 10px;
+	background: var(--accent-clr);
+}
+
+.toolkit-header h2 {
+	font-size: clamp(3rem, 5vw, 5rem);
+}
+
+.toolkit-header p {
+	color: var(--other-clr);
+}
+
+.back-btn {
+	margin-top: 8rem;
+	display: flex;
+	align-items: center;
+	font-size: 1.15rem;
+	gap: 0.5rem;
+	cursor: pointer;
+}
+
+.tools .container {
+	margin-top: 10rem;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 6rem;
+}
+
+.tools a {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	transition: color 300ms ease-in-out;
+}
+
+.tools svg {
+	opacity: 0;
+	transition: opacity 300ms ease-in-out;
+}
+
+.tools a:hover {
+	color: var(--accent-clr);
+}
+
+.tools a:hover svg {
+	opacity: 1;
+}
+
+.tools p {
+	color: var(--other-clr);
+	padding-top: 0.75rem;
+	font-size: 1.3rem;
+}
+
+.youtube {
+	margin-top: var(--section-mt);
+}
+
+.youtube ul {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding-top: 4rem;
+}
+
+@media screen and (max-width: 640px) {
+	.toolkit-main {
+		margin-top: 6rem;
+	}
+}

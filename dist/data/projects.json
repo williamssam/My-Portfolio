@@ -1,0 +1,75 @@
+[
+	{
+		"main": [
+			{
+				"id": 1,
+				"title": "Github Profile",
+				"about": "A better look at your github profile which includes data visualization of your top languages, starred repos and sort your top repos according to the number of forks, stars and size",
+				"tech": [
+					"React",
+					"Styled Components",
+					"Github Api/Github Polyglot"
+				],
+				"url": "https://gh-profiles.netlify.app/"
+			},
+			{
+				"id": 2,
+				"title": "Coronavirus Map Dashboard",
+				"about": "A look at the current Global Coronavirus (Covid-19) Cases including confirmed cases, recovered cases, total deaths, active cases, critical cases etc with map to indicate individual coountry confirmed cases, recovered cases and total deaths. It also incorporate graphs to indicate the global cases.",
+				"tech": ["React", "CSS Modules", "Axios"],
+				"url": "https://covid-map-dashboard.netlify.app/"
+			},
+			{
+				"id": 3,
+				"title": "Ip Address Tracker",
+				"about": "Track any ip address in the world and view their current location/location where the Ip was registered, timezone, and isp. It also indicates the current location of the Ip Address on a map.",
+				"tech": ["HTML", "CSS", "Javascript"],
+				"url": "https://williamssam.github.io/ip-address-tracker/"
+			},
+			{
+				"id": 4,
+				"title": "WordSearch",
+				"about": "An application to search for the meaning, synonyms of english words with an added advantage of listening to the pronounciation of the word.",
+				"tech": ["React"],
+				"url": "https://williamssam.github.io/wordsearch/"
+			},
+			{
+				"id": 5,
+				"title": "Joke Web Bot",
+				"about": "Are you having a boring day? This is a web bot that searches for jokes on the internet by clicking on 'get a joke button' and reads out the joke for you using the 'speechsynthesis api' and also you can change the accent/speaker to your choice if the original accent sounds not jovial 😁",
+				"tech": ["HTML", "CSS", "Javascript"],
+				"url": "https://williamssam.github.io/jokes-web-bot/"
+			}
+		],
+		"other": [
+			{
+				"id": 1,
+				"title": "Weather App",
+				"about": "Displays the current weather condition of the user current location. If curious, you can also search for other location weather info.",
+				"tech": ["HTML", "CSS", "Javascript"],
+				"url": "https://williamssam.github.io/weather-app/"
+			},
+			{
+				"id": 2,
+				"title": "Password Generator",
+				"about": "Generate random password containing only letters, symbols, numbers, either two of the three or all of them. No need for 'Ctrl + C' 😄, just click the copy button 😎",
+				"tech": ["HTML", "CSS", "Javascript"],
+				"url": "https://williamssam.github.io/password-generator"
+			},
+			{
+				"id": 3,
+				"title": "Quiz App",
+				"about": "Test your knowledge with different questions from different fields.",
+				"tech": ["HTML", "CSS", "Javascript"],
+				"url": "https://williamssam.github.io/quiz-app/"
+			},
+			{
+				"id": 4,
+				"title": "Color Palete Generator",
+				"about": "Randomly generate beautif color palette for your project. and you could just press 'J' on your keyboard to generate",
+				"tech": ["HTML", "CSS", "Javascript"],
+				"url": "https://williamssam.github.io/color-palette-generator/"
+			}
+		]
+	}
+]
