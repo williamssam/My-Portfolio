@@ -413,6 +413,9 @@ h3 {
 }
 
 .about-me img {
+	align-self: end;
+	justify-self: end;
+	width: 400px;
 	transform: scale(0.99);
 	box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.006),
 		0px 0px 5.3px rgba(0, 0, 0, 0.008), 0px 0px 10px rgba(0, 0, 0, 0.01),
@@ -434,11 +437,19 @@ h3 {
 	line-height: 1.8;
 }
 
-.about ul {
-	padding-top: 1.5rem;
+/*******************
+		MY SKILLS
+*************************/
+.my-skills {
+	margin-top: var(--section-mt);
+	padding: 4rem 1rem;
+}
+
+.my-skills ul {
+	padding-top: 5rem;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 1rem;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3.2rem 1rem;
 }
 
 /* .download-cv {
@@ -613,7 +624,7 @@ h3 {
 *************************/
 .contact {
 	margin-top: var(--section-mt);
-	padding: 0 1rem;
+	padding: 4rem 1rem;
 }
 
 .mail-link {
@@ -800,6 +811,10 @@ h3 {
 
 	.hero img {
 		display: none;
+	}
+
+	.my-skills ul {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.project:nth-child(even) img {
