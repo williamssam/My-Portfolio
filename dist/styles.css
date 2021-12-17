@@ -37,17 +37,6 @@
 	color: var(--primary-clr);
 }
 
-/* remove focus from all elements */
-*:focus:not(:focus-visible) {
-	outline: none;
-}
-
-/* adds focus style only on pressing tab key */
-:focus-visible {
-	outline: 2px dotted var(--accent-clr);
-	outline-offset: 3px;
-}
-
 /***********************
 	CSS RESET
 *********************/
