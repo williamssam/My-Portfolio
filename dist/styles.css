@@ -37,6 +37,17 @@
 	color: var(--primary-clr);
 }
 
+/* remove focus from all elements */
+*:focus:not(:focus-visible) {
+	outline: none;
+}
+
+/* adds focus style only on pressing tab key */
+:focus-visible {
+	outline: 2px dotted var(--accent-clr);
+	outline-offset: 3px;
+}
+
 /***********************
 	CSS RESET
 *********************/
@@ -227,6 +238,24 @@ h3 {
 	transform: scaleX(1);
 }
 
+/* skip to content link for accesibility (keyboard users) */
+.skip-to-content {
+	position: absolute;
+	background: var(--accent-clr);
+	color: var(--secondary-clr);
+	padding: 0.75rem 1rem;
+	left: 1.5rem;
+	top: 0;
+	border-radius: 0 0 0.5rem 0.5rem;
+	font-size: 1.4rem;
+	transform: translateY(-200%);
+	transition: all 350ms ease-in;
+}
+
+.skip-to-content:focus {
+	transform: translateY(0);
+}
+
 /*******************
 		HEADER
 *************************/
@@ -241,7 +270,7 @@ h3 {
 	justify-content: space-between;
 	padding: 0.85rem 2rem;
 	background: var(--secondary-clr);
-	margin-top: 1.5rem;
+	margin-top: 1.15rem;
 	border-radius: 0.5rem;
 	font-size: 1.4rem;
 }
@@ -686,6 +715,10 @@ h3 {
 	body.open::after {
 		transition: transform 300ms ease-in-out;
 		transform: translateY(0);
+	}
+
+	.skip-to-content {
+		display: none;
 	}
 
 	.nav {
