@@ -238,6 +238,10 @@ h3 {
 	transform: scaleX(1);
 }
 
+small {
+	color: var(--other-clr);
+}
+
 /* skip to content link for accesibility (keyboard users) */
 .skip-to-content {
 	position: absolute;
