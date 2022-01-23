@@ -4,6 +4,7 @@
 	--primary-clr: hsl(0, 0%, 0%);
 	--secondary-clr: hsl(0, 0%, 11%);
 	--other-clr: hsl(0, 0%, 61%);
+	--tag-clr: hsl(0, 0%, 70%);
 	--accent-clr: hsl(160, 100%, 70%);
 	--accent-other-clr: hsl(166, 100%, 80%);
 	--main-clr: hsl(0, 0%, 95%);
@@ -202,7 +203,7 @@ h3 {
 
 .info {
 	max-width: 500px;
-	font-size: 1.3rem;
+	font-size: 1.35rem;
 	padding-top: 1.3rem;
 	color: var(--other-clr);
 }
@@ -532,7 +533,7 @@ small {
 
 .tech-stack li {
 	padding: 0.2rem 0.5rem;
-	background: var(--other-clr);
+	background: var(--tag-clr);
 	border-radius: 2px;
 	color: var(--primary-clr);
 	font-size: clamp(1.15rem, 1vw, 1.3rem);
@@ -592,7 +593,7 @@ small {
 }
 
 .other-projects a img {
-	height: 100%;
+	/* height: 100%; */
 	object-fit: cover;
 }
 
