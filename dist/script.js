@@ -5,8 +5,6 @@ const setCurrentYear = () => {
 	date.textContent = currentYear
 }
 
-setCurrentYear()
-
 // hamburger menu
 const hamburger = document.querySelector('.hamburger')
 const navList = document.querySelector('.nav-list')
@@ -25,3 +23,4 @@ hamburger.addEventListener('click', toggleMobileMenu)
 
 // initialize aos (library for scroll animation)
 AOS.init()
+setCurrentYear()

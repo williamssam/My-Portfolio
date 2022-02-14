@@ -4,7 +4,7 @@
 	--primary-clr: hsl(0, 0%, 0%);
 	--secondary-clr: hsl(0, 0%, 11%);
 	--other-clr: hsl(0, 0%, 61%);
-	--tag-clr: hsl(0, 0%, 70%);
+	--tag-clr: hsl(0, 0%, 55%);
 	--accent-clr: hsl(160, 100%, 70%);
 	--accent-other-clr: hsl(166, 100%, 80%);
 	--main-clr: hsl(0, 0%, 95%);
@@ -186,7 +186,7 @@ h3 {
 *************************/
 .container {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin-inline: auto;
 	padding: 0 1rem;
 }
 
@@ -204,13 +204,13 @@ h3 {
 .info {
 	max-width: 500px;
 	font-size: 1.35rem;
-	padding-top: 1.3rem;
+	padding-block-start: 1.3rem;
 	color: var(--other-clr);
 }
 
 .btn {
 	padding: 0.8rem 3rem;
-	margin-top: 2rem;
+	margin-block-start: 2rem;
 	color: var(--main-clr);
 	border-radius: 0.2rem;
 	cursor: pointer;
@@ -243,7 +243,7 @@ small {
 	color: var(--other-clr);
 }
 
-/* skip to content link for accesibility (keyboard users) */
+/* link to skip to content for accesibility (keyboard users) */
 .skip-to-content {
 	position: absolute;
 	background: var(--accent-clr);
@@ -275,7 +275,7 @@ small {
 	justify-content: space-between;
 	padding: 0.85rem 2rem;
 	background: var(--secondary-clr);
-	margin-top: 1.15rem;
+	margin-block-start: 1.15rem;
 	border-radius: 0.5rem;
 	font-size: 1.4rem;
 }
@@ -340,7 +340,7 @@ small {
 }
 
 .hero .container {
-	margin-top: var(--section-mt);
+	margin-block-start: var(--section-mt);
 	display: grid;
 	place-items: center;
 	gap: 5rem;
@@ -370,14 +370,13 @@ small {
 }
 
 .hire-btn {
-	margin-top: 5rem;
+	margin-block-start: 5rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	display: inline-block;
 	border: 1px solid var(--accent-clr);
 	color: var(--accent-clr);
 	transition: all 300ms cubic-bezier(0.25, 0.32, 0.85, 0.58);
-
 	z-index: 1;
 	position: relative;
 	font-size: inherit;
@@ -401,7 +400,7 @@ small {
 
 .hire-btn:hover {
 	cursor: pointer;
-	color: #161616;
+	color: hsl(0, 0%, 9%);
 	border: 0;
 }
 
@@ -413,7 +412,7 @@ small {
 		ABOUT SECTION
 *************************/
 .about-me {
-	margin-top: var(--section-mt);
+	margin-block-start: var(--section-mt);
 	background: var(--secondary-clr);
 	padding: var(--section-mt) 1rem;
 }
@@ -434,28 +433,28 @@ small {
 		0px 0px 5.3px rgba(0, 0, 0, 0.008), 0px 0px 10px rgba(0, 0, 0, 0.01),
 		0px 0px 17.9px rgba(0, 0, 0, 0.012), 0px 0px 33.4px rgba(0, 0, 0, 0.014),
 		0px 0px 80px rgba(0, 0, 0, 0.02);
-	transition: all 0.3s ease-in-out;
+	filter: brightness(0.8);
 }
 
 .about {
-	padding-top: 1.25rem;
+	padding-block-start: 1.25rem;
 }
 
 .about p {
-	padding-top: 2rem;
+	padding-block-start: 2rem;
 	line-height: 1.8;
 }
 
 /*******************
-		MY SKILLS
+		MY SKILLS SECTION
 *************************/
 .my-skills {
-	margin-top: var(--section-mt);
+	margin-block-start: var(--section-mt);
 	padding: 4rem 1rem;
 }
 
 .my-skills ul {
-	padding-top: 5rem;
+	padding-block-start: 5rem;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 3.2rem 1rem;
@@ -465,12 +464,12 @@ small {
 		PROJECTS SECTION
 *************************/
 .projects-section {
-	margin-top: var(--section-mt);
+	margin-block-start: var(--section-mt);
 	padding: 4rem 1rem;
 }
 
 .projects {
-	padding-top: 5rem;
+	padding-block-start: 5rem;
 	display: flex;
 	flex-direction: column;
 	gap: 12rem;
@@ -508,12 +507,12 @@ small {
 }
 
 .project h2 {
-	padding-top: clamp(1.5rem, 2vw, 3rem);
+	padding-block-start: clamp(1.5rem, 2vw, 3rem);
 	font-size: clamp(2.5rem, 3vw, 4rem);
 }
 
 .project p {
-	padding-top: 1.5rem;
+	padding-block-start: 1.5rem;
 	max-width: 500px;
 }
 
@@ -523,12 +522,12 @@ small {
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 2rem;
-	padding-top: 2rem;
+	padding-block-start: 2rem;
 }
 
 .project-links {
 	column-gap: 5rem;
-	padding-top: 3.2rem;
+	padding-block-start: 3.2rem;
 }
 
 .tech-stack li {
@@ -553,7 +552,7 @@ small {
 
 /* other noteworthy projects */
 .other-noteworthy-project {
-	margin-top: 15rem;
+	margin-block-start: 15rem;
 }
 
 .other-noteworthy-project h3 {
@@ -562,7 +561,7 @@ small {
 }
 
 .other-projects {
-	padding-top: calc(var(--section-mt) / 2);
+	padding-block-start: calc(var(--section-mt) / 2);
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	gap: 4rem;
@@ -577,8 +576,8 @@ small {
 	justify-content: space-between;
 	gap: 1rem;
 	background: var(--secondary-clr);
-	padding: 2rem;
 	border-radius: 0.3rem;
+	overflow: hidden;
 	font-size: 1.45rem;
 	box-shadow: 0px 0px 2.2px rgba(0, 0, 0, 0.011),
 		0px 0px 5.3px rgba(0, 0, 0, 0.016), 0px 0px 10px rgba(0, 0, 0, 0.02),
@@ -593,12 +592,11 @@ small {
 }
 
 .other-projects a img {
-	/* height: 100%; */
 	object-fit: cover;
 }
 
 .other-projects div {
-	padding-top: 1.5rem;
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -622,16 +620,16 @@ small {
 }
 
 /*******************
-		CONTACT
+		CONTACT SECTION
 *************************/
 .contact {
-	margin-top: var(--section-mt);
+	margin-block-start: var(--section-mt);
 	padding: 4rem 1rem;
 }
 
 .mail-link {
 	display: flex;
-	margin-top: var(--section-mt);
+	margin-block-start: var(--section-mt);
 	width: max-content;
 	transition: var(--transition-clr);
 	position: relative;
@@ -648,13 +646,13 @@ small {
 		FOOTER
 *************************/
 .footer {
-	margin-top: var(--section-mt);
+	margin-block-start: var(--section-mt);
 	background: var(--secondary-clr);
 	padding: 0 1rem;
 }
 
 .footer .container {
-	margin-top: var(--section-mt);
+	margin-block-start: var(--section-mt);
 	font-size: 1.2rem;
 	padding: 2rem 1rem;
 	display: flex;
@@ -705,7 +703,7 @@ small {
 }
 
 /* responsiveness */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 50em) {
 	body::after {
 		position: absolute;
 		content: '';
@@ -783,7 +781,7 @@ small {
 	}
 
 	.line-menu:not(:first-child) {
-		margin-top: 0.75rem;
+		margin-block-start: 0.75rem;
 	}
 
 	.line-menu.half {
