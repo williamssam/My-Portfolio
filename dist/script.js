@@ -3,6 +3,7 @@ const setCurrentYear = () => {
 	const currentYear = new Date().getFullYear()
 	date.textContent = currentYear
 }
+setCurrentYear()
 
 // hamburger menu
 const hamburger = document.querySelector('.hamburger')
@@ -17,9 +18,8 @@ const toggleMobileMenu = () => {
 	document.body.classList.toggle('open')
 }
 
-navLinks.forEach((link) => link.addEventListener('click', toggleMobileMenu))
+navLinks.forEach(link => link.addEventListener('click', toggleMobileMenu))
 hamburger.addEventListener('click', toggleMobileMenu)
 
 // initialize aos (library for scroll animation)
 AOS.init()
-setCurrentYear()

@@ -369,8 +369,13 @@ small {
 	filter: drop-shadow(0 0 0.75rem var(--secondary-clr));
 }
 
-.hire-btn {
+.hero-btn-container {
 	margin-block-start: 5rem;
+	display: flex;
+	/* align-items: center; */
+}
+
+.hire-btn {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	display: inline-block;
@@ -408,6 +413,19 @@ small {
 	transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
 }
 
+.download-link {
+	color: var(--other-clr);
+	transition: color 0.45s ease-in-out;
+}
+
+.download-link:hover {
+	color: #fff;
+}
+
+.download-link:focus {
+	outline: none;
+}
+
 /*******************
 		ABOUT SECTION
 *************************/
@@ -433,7 +451,7 @@ small {
 		0px 0px 5.3px rgba(0, 0, 0, 0.008), 0px 0px 10px rgba(0, 0, 0, 0.01),
 		0px 0px 17.9px rgba(0, 0, 0, 0.012), 0px 0px 33.4px rgba(0, 0, 0, 0.014),
 		0px 0px 80px rgba(0, 0, 0, 0.02);
-	filter: brightness(0.8);
+	/* filter: brightness(0.8); */
 }
 
 .about {
