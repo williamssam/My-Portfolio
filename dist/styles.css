@@ -504,6 +504,7 @@ small {
 	transition: opactiy 300ms ease-in-out;
 	position: relative;
 	display: inline-block;
+	height: 100%;
 }
 
 .project-img:hover {
@@ -611,6 +612,7 @@ small {
 
 .other-projects a img {
 	object-fit: cover;
+	height: 300px;
 }
 
 .other-projects div {
